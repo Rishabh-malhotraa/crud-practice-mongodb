@@ -1,0 +1,35 @@
+### display all users
+GET http://localhost:3000/subscribers
+
+### delete all users
+DELETE http://localhost:3000/subscribers
+### display the given user
+GET http://localhost:3000/subscribers/5f9204d3d846fa3280a53160
+
+### creating new user
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "name": "Rishabh",
+  "subscribedToChannel": "rish-bish"
+}
+
+### delete a given user
+DELETE http://localhost:3000/subscribers/5f920f3dfee46b1b641cd9fa
+
+### UPDATE a given user
+PATCH http://localhost:3000/subscribers/5f920f3dfee46b1b641cd9fa
+Content-Type:application/json
+
+{
+  "name": "RishGod"
+}
+### UPDATE a given user
+PATCH http://localhost:3000/subscribers/5f920f3dfee46b1b641cd9fa
+Content-Type:application/json
+
+{
+  "name": "RishGod",
+  "subscribedToChannel": "bish-rish"
+}
